@@ -49,7 +49,7 @@ class SearchField extends Component {
   render() {
     return (
       <div className="search-field">
-        <input type="text" value={this.state.search} onChange={this.handleChange} ref={this.searchInput}/>
+        <input type="text" value={this.state.search} onChange={this.handleChange} ref={this.searchInput} placeholder="Cras ornare tristique elit."/>
         <div className="suggestions">
           {this.state.suggestions.map(suggestion =>
             <div className="item" key={`suggestions_${suggestion.id}`} onClick={e => this.chooseSugestation(suggestion.value)}>
