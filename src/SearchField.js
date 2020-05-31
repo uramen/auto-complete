@@ -18,10 +18,10 @@ class SearchField extends Component {
     const search = event.target.value
 
     this.setState({search})
-    this.getsuggestions(search)
+    this.getSuggestions(search)
   }
 
-  getsuggestions = async search => {
+  getSuggestions = async search => {
     if(search === '') {
       this.setState({suggestions: []})
       return
