@@ -1,4 +1,4 @@
-## Available Scripts
+## Start
 
 For starting the project please run:
 
