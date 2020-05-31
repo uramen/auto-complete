@@ -18,6 +18,9 @@ class SearchField extends Component {
     const search = event.target.value
 
     this.setState({search})
+
+    //Also, better to add debouncing it'll increase performance.
+    //Something like debouncing(this.getSuggestions(search), 3000)
     this.getSuggestions(search)
   }
 
