@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Mocksuggestions from './data.json';
+import MockSuggestions from './data.json';
 import './SearchField.css';
 
 class SearchField extends Component {
@@ -30,7 +30,7 @@ class SearchField extends Component {
     //In real world we get filtered data from backend.
     //Something like this:
     //const suggestions = await axios.get('/suggestions')
-    const suggestions = Mocksuggestions.filter(suggestion => {
+    const suggestions = MockSuggestions.filter(suggestion => {
       return new RegExp('^' + search.toLowerCase()).test(suggestion.value.toLowerCase())
     })
 
