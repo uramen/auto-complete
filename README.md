@@ -2,7 +2,7 @@
 
 For starting the project please run:
 
-#### `yarn start`
+#### `yarn && yarn start`
 
 ## Test information
 
