@@ -2,9 +2,9 @@
 
 ### What is the difference between Component and PureComponent? give an example where it might break my app.
 ```
-  PureComponent has predefined shouldComponentUpdate method which is using for comparison props and
-  state before every render. It increase performance in most of the cases but you should remember that comparison is shallow and every
-  mutation can produce a new bug.
+  PureComponent has predefined shouldComponentUpdate method which is used for comparison props and
+  state before every render. It increases performance in most of the cases but you should remember that comparison is shallow and every
+  mutation can produce a bug.
 ```  
 ### Context + ShouldComponentUpdate might be dangerous. Can think of why is that?
 ```
@@ -69,7 +69,7 @@ send.catch(e => send to error handler)
 
 ### How many arguments does setState take and why is it async.
 ```
-It can take two arguments setState({...data}, () => 'invoked after updated new state'). Maybe it's async due the performance problems.
+It can take two arguments setState({...data}, () => 'invoked after updated new state'). Maybe it's async due to the performance problems.
 ```
 
 ### List the steps needed to migrate a Class to Function Component.
